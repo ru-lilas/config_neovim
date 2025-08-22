@@ -10,3 +10,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 
 opt.termguicolors = true
+
+-- 
+opt.ignorecase = true
+opt.wrap = false
