@@ -14,3 +14,6 @@ opt.termguicolors = true
 -- 
 opt.ignorecase = true
 opt.wrap = false
+
+-- use system clipboard
+opt.clipboard = "unnamedplus"
