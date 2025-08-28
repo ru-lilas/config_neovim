@@ -1,4 +1,3 @@
-require("config.options")
 require("config.lazy")
--- vim.cmd.colorscheme "iceberg"
+require("config.options")
 vim.cmd.colorscheme "monokai_pro"
