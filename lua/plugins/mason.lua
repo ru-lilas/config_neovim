@@ -13,7 +13,8 @@ return {
         "rust_analyzer",
         "bashls",
         "pyright",
-        "clangd"
+        "clangd",
+        "texlab"
       },
     },
     dependencies = {

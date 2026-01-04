@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+-- 開くターミナルとしてbashを選択
+vim.o.shell ="/bin/bash"
+
 -- 行番号の表示
 opt.number = true
 opt.relativenumber = false
