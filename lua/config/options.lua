@@ -15,6 +15,8 @@ opt.expandtab = true
 
 opt.termguicolors = true
 
+opt.helplang = "ja"
+
 -- 
 opt.ignorecase = true
 opt.wrap = false

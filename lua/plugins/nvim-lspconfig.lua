@@ -34,7 +34,11 @@ return {
             onSave = false,
           },
           -- 補完のためのインデックス作成設定
-          chktex = { onOpenAndSave = true },
+          -- 警告がたくさん出るので無効にする(20260428)
+          chktex = {
+            onOpenAndSave = true,
+            onEdit = true,
+          },
           -- 依存関係が複雑な場合に有効
           diagnostics = {
             -- これが重要：undefined reference のチェックを有効にしているか
