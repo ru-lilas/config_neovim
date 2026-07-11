@@ -12,6 +12,13 @@ return {
       settings = {
         Lua = {
           diagnostics = { globals = { "vim" } },
+          runtime = {
+            version = "Lua JIT",
+          },
+          workspace = {
+            checkThirdParty = false,
+            library = vim.api.nvim_get_runtime_file("", true),
+          },
         },
       },
     })
