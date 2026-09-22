@@ -23,18 +23,19 @@ opt.wrap = false
 opt.whichwrap = 'b,s,h,l,<,>,[,],~'
 
 -- use system clipboard
-
-vim.g.clipboard = {
-  name = 'OSC 52',
-  copy = {
-    ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
-    ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
-  },
-  paste = {
-    ['+'] = require("vim.ui.clipboard.osc52").paste("+"),
-    ['*'] = require("vim.ui.clipboard.osc52").paste("*"),
-  },
-}
+opt.clipboard = "unnamedplus"
+--
+-- vim.g.clipboard = {
+--   name = 'OSC 52',
+--   copy = {
+--     ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
+--     ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
+--   },
+--   paste = {
+--     ['+'] = require("vim.ui.clipboard.osc52").paste("+"),
+--     ['*'] = require("vim.ui.clipboard.osc52").paste("*"),
+--   },
+-- }
 
 -- hover window
 vim.lsp.handlers["textDocument/definition"] = vim.lsp.with(

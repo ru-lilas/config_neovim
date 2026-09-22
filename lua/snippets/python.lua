@@ -63,4 +63,21 @@ return {
       i(0),
     }
   ),
+  s(
+  {
+    trig = "fdc",
+    name = "frozen dataclass",
+    dscr = "dataclass(frozen=True, slots=True)を展開する"
+  },
+  {
+    t({
+      "@dataclass(frozen=True, slots=True)",
+      "class "
+    }),
+    i(1, "ClassName"),
+    t({":", "    "}),
+    i(2, "field: int"),
+    i(0),
+  }
+),
 }
