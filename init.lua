@@ -1,10 +1,14 @@
+vim.pack.add({
+  'https://github.com/folke/snacks.nvim',
+})
 require("config.lazy")
 require("config.options")
 require("config.keymaps")
 require("config.snippets")
 require("config.lsp")
 
-vim.cmd.colorscheme "monokai_pro"
+vim.opt.background = "dark"
+vim.cmd.colorscheme("monokai_pro")
 vim.api.nvim_create_user_command(
     'InitLua',
     function()

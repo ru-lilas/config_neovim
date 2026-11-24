@@ -1,42 +1,27 @@
-local opt = vim.opt
-
--- 開くターミナルとしてbashを選択
-vim.o.shell ="/bin/bash"
+local o = vim.opt
 
 -- 行番号の表示
-opt.number = true
-opt.relativenumber = false
-opt.scrolloff = 3
+o.number = true
+o.relativenumber = true
+o.scrolloff = 3
 
 -- タブとインデントの設定
-opt.tabstop = 4
-opt.shiftwidth = 2
-opt.expandtab = true
+o.tabstop = 2
+o.shiftwidth = 2
+o.expandtab = true
+o.softtabstop = -1
 
-opt.termguicolors = true
+o.termguicolors = true
 
-opt.helplang = "ja"
+o.helplang = "ja"
 
 -- 
-opt.ignorecase = true
-opt.wrap = false
-opt.whichwrap = 'b,s,h,l,<,>,[,],~'
+o.ignorecase = true
+o.wrap = false
+o.whichwrap = 'b,s,h,l,<,>,[,],~'
 
 -- use system clipboard
-opt.clipboard = "unnamedplus"
---
--- vim.g.clipboard = {
---   name = 'OSC 52',
---   copy = {
---     ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
---     ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
---   },
---   paste = {
---     ['+'] = require("vim.ui.clipboard.osc52").paste("+"),
---     ['*'] = require("vim.ui.clipboard.osc52").paste("*"),
---   },
--- }
-
+o.clipboard = "unnamedplus"
 -- hover window
 vim.lsp.handlers["textDocument/definition"] = vim.lsp.with(
   vim.lsp.handlers.hover,

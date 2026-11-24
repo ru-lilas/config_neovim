@@ -21,13 +21,10 @@ return {
       dscr = "propertyを展開する"
     },
     {
-      t(
-        {
-          "@property",
-          ""
-        }
-      ),
-      unpack(function_body()),
+      t({ "@property", "def" }),
+      i(1, ""),
+      t({ "(self):", "\t"}),
+      i(0),
     }
   ),
   s(

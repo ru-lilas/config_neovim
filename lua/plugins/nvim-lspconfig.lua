@@ -32,7 +32,6 @@ return {
     })
 
     vim.lsp.config("texlab", {
-      -- ここが重要：子ファイルから開いても thesis.tex を探してそこをルートにする
       -- root_dir = util.root_pattern(".texlabroot", ".latexmkrc", "thesis.tex", ".git"),
       settings = {
         texlab = {
@@ -45,6 +44,20 @@ return {
           chktex = {
             onOpenAndSave = true,
             onEdit = true,
+            additionalArgs = {
+              "-n8",
+              "-n2",
+              "-n9",
+              "-n24",
+              "-n26",
+              "-n11",
+              "-n38",
+              "-n35",
+              "-n3",
+              "-n1",
+              "-n36",
+              "-n39",
+            },
           },
           -- 依存関係が複雑な場合に有効
           diagnostics = {

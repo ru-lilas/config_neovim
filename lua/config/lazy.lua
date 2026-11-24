@@ -22,4 +22,11 @@ require("lazy").setup({
     { import = "plugins" },
   },
   checker = { enabled = true },
+
+  performance = {
+    reset_packpath = false,
+    rtp = {
+      reset = false,
+    },
+  },
 })
